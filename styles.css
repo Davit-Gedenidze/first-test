@@ -1,0 +1,90 @@
+﻿body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(253,205,61,1) 0%, rgba(252,56,56,1) 100%);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  display: flex;
+  width: 800px;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.card-image {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: -30px;
+  box-shadow: 10px 15px 20px #ff512f;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #ff512f, #f09819);
+}
+
+.card-content {
+  padding: 20px;
+  width: 50%;
+}
+
+.card-date {
+  color: #999;
+  margin: 0 0 10px;
+}
+
+.card-title {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.card-description {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #ff512f, #f09819);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card-button:hover {
+  background: linear-gradient(to bottom, #f09819, #ff512f);
+}
+
+.card-pagination {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.card-pagination span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.card-pagination span.active {
+  background: #ff512f;
+}
